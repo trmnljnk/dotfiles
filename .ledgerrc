@@ -1,0 +1,16 @@
+--file ~/Dropbox/ledger/bhr-18-00.ledger
+--date-format=%Y-%m-%d
+--sort date
+--empty
+--force-color
+--wide
+--cleared
+--pager /usr/bin/less
+
+;--strict
+;--pedantic
+;--explicit
+;--check-payees
+;--strict
+;--flat
+;--no-total
