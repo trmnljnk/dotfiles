@@ -6,7 +6,7 @@ https://brew.sh/
 # I recommend adding the following line to your ~/.zshrc or ~/.bash_profile.
 
 # export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-# export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
+# export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 # export HOMEBREW_CASK_OPTS="--appdir=~/Applications --fontdir=/Library/Fonts"
 
 # export HOMEBREW_NO_ANALYTICS=1
