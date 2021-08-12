@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 
-echo "===== $(date +%Y-%m-%d-%H%M%S) ====" >> brewInstallation.log
-echo "   " >> brewInstallation.log
+
+printf "%s\n\n" "===== $(date +%Y-%m-%d-%H%M%S) ====" >> brewInstallation.log
+
 brew bundle --verbose | tee >> $HOME/brewInstallation.log
