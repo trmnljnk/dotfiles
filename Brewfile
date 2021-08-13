@@ -36,6 +36,7 @@ cask "binance"
 cask "datagrip"
 cask "intellij-idea"
 cask "pycharm"
+cask "whatsapp"
 
 
 
