@@ -20,6 +20,7 @@ brew "coreutils"
 brew "dcfldd"
 brew "exiftool"
 brew "ffmpeg"
+brew "youtube-dl"
 
 
 cask "visual-studio-code"
