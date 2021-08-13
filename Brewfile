@@ -9,20 +9,39 @@ tap "mongodb/brew"
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "~/Applications", require_sha: true
 
+brew "git"
 brew "rsync"
+brew "gnupg"
 brew "dockutil"
 brew "wget"
 brew "screen"
+brew "binutils"
+brew "coreutils"
+brew "dcfldd"
+brew "exiftool"
+brew "ffmpeg"
 
 
 cask "visual-studio-code"
+cask "sublime-text"
 cask "brave-browser"
+cask "google-chrome"
 cask "firefox"
+cask "tor-browser"
 cask "keepassx"
 cask "keepassxc"
+cask "microsoft-teams"
+cask "onedrive"
+cask "binance"
+cask "datagrip"
+cask "intellij-idea"
+cask "pycharm"
+
+
 
 mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "WiFi Explorer Lite", id: 1408727408
-mas "OneDrive", id: 823766827
+
+
