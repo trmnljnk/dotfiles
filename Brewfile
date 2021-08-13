@@ -26,7 +26,7 @@ brew "youtube-dl"
 cask "visual-studio-code"
 cask "sublime-text"
 cask "brave-browser"
-cask "google-chrome", args: { appdir: "~/Applications" }
+cask "google-chrome", args: { appdir: "~/Applications", require_sha: false }
 cask "firefox"
 cask "tor-browser"
 cask "keepassx"
