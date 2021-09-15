@@ -6,7 +6,7 @@ set softtabstop=4
 set expandtab                                                                 
 set textwidth=79                                                              
 set colorcolumn=79                                                            
-set number relativenumber  ""set rnu && set nu!                                                      
+set number relativenumber  ""set rnu & set nu!                                                      
 set hlsearch                                                                  
                                                                               
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=nl                   
