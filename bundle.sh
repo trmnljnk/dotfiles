@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 
 
 printf "\n%s\n\n" "===== $(date +%Y-%m-%d-%H%M%S) ====" >> ${HOME}/brewInstallation.log
