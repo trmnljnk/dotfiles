@@ -36,5 +36,14 @@ git commit -m "message"
 git fetch
 ```
 ```
-git push
+git pull origin master
 ```
+```
+git push origin master
+```
+
+
+
+
+
+
