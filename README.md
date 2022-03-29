@@ -20,6 +20,10 @@ git status
 git log
 ```
 ```
+git diff
+```
+
+```
 git remote -v
 ```
 ```
