@@ -1,4 +1,9 @@
 
+```
+echo -n $(python3 -c 'print("A"*40)')
+```
+
+
 
 ```
 printf "\n%s\n\n" "===== $(date +%Y-%m-%d\ %H:%M:%S) ====" >> ${HOME}/bin/brewInstallation.log
