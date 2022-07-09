@@ -7,7 +7,9 @@ set softtapstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-set colorcolumn=80
+nnoremap <Leader>cc :set set colorcolumn=80<CR>
+nnoremap <Leader>ncc :set set colorcolumn=80<CR>
+set mouse=a
 ```
 
 ```
