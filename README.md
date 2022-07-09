@@ -1,4 +1,16 @@
 ```
+syntax on
+colorscheme peachpuff
+set nu
+set tabstop=4
+set softtapstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set colorcolumn=80
+```
+
+```
 mkdir -p mydir/{colors/{basic,blended},shape,animals/{mammals,reptiles}}
 ```
 
