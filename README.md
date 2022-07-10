@@ -1,6 +1,5 @@
 ```
 syntax on
-colorscheme peachpuff
 set nu
 set ru
 set laststatus=2
@@ -10,7 +9,6 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set colorcolumn=80
-set termguicolors
 set mouse=a
 ```
 
