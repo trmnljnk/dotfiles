@@ -12,24 +12,6 @@ set colorcolumn=80
 set mouse=a
 ```
 
-
-
-
-
-```
-syntax on
-colorscheme peachpuff
-set nu
-set tabstop=4
-set softtapstop=4
-set shiftwidth=4
-set autoindent
-set smartindent
-nnoremap <Leader>cc :set set colorcolumn=80<CR>
-nnoremap <Leader>ncc :set set colorcolumn=80<CR>
-set mouse=a
-```
-
 ```
 mkdir -p mydir/{colors/{basic,blended},shape,animals/{mammals,reptiles}}
 ```
