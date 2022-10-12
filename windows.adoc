@@ -56,3 +56,43 @@ Get-AppxPackage -Name $ProvisionedAppName -AllUsers | Remove-AppxPackage
 Get-AppXProvisionedPackage -Online | Where-Object DisplayName -EQ $ProvisionedAppName | Remove-AppxProvisionedPackage -Online
 }
 exit
+
+
+
+
+-------------------------------------------------------------------------------
+Windows manage Defender Antivirus with PowerShell on Windows 10
+-------------------------------------------------------------------------------
+
+Check status of Microsoft Defender
+
+Get-MpComputerStatus
+
+Ceck for updates on Microsoft Defender
+
+Update-MpSignature
+
+Perform quick virus scan with Microsoft Defender
+
+Start-MpScan -ScanType QuickScan
+
+Perform full virus scan with Microsoft Defender
+
+Start-MpScan -ScanType FullScan
+
+Perform custom virus scan with Microsoft Defender
+
+Start-MpScan -ScanType CustomScan -ScanPath "C:\Users\user\Downloads"
+
+Disable antivirus
+
+Set-MpPreference -DisableRealtimeMonitoring $true
+
+
+
+
+
+
+
+
+
