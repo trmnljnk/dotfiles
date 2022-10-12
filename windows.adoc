@@ -8,6 +8,8 @@ set-executionpolicy remotesigned
 Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 ----
 
+[source, shell]
+----
 $ProvisionedAppPackageNames = @(
 "Microsoft.3DBuilder"
 "Microsoft.BingFinance"
@@ -45,8 +47,10 @@ Get-AppxPackage -Name $ProvisionedAppName -AllUsers | Remove-AppxPackage
 Get-AppXProvisionedPackage -Online | Where-Object DisplayName -EQ $ProvisionedAppName | Remove-AppxProvisionedPackage -Online
 }
 exit
+----
 
-
+[sourde, shell]
+----
 $ProvisionedAppPackageNames = @(
 "Microsoft.Windows.Photos"
 "Microsoft.WindowsAlarms"
@@ -59,7 +63,7 @@ Get-AppxPackage -Name $ProvisionedAppName -AllUsers | Remove-AppxPackage
 Get-AppXProvisionedPackage -Online | Where-Object DisplayName -EQ $ProvisionedAppName | Remove-AppxProvisionedPackage -Online
 }
 exit
-
+----
 
 
 
@@ -69,7 +73,10 @@ Windows manage Defender Antivirus with PowerShell on Windows 10
 
 Check status of Microsoft Defender
 
+[sourde, shell]
+----
 Get-MpComputerStatus
+----
 
 Ceck for updates on Microsoft Defender
 
@@ -88,9 +95,10 @@ Perform custom virus scan with Microsoft Defender
 Start-MpScan -ScanType CustomScan -ScanPath "C:\Users\user\Downloads"
 
 Disable antivirus
-
+[sourde, shell]
+----
 Set-MpPreference -DisableRealtimeMonitoring $true
-
+----
 
 
 
