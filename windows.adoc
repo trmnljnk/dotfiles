@@ -3,7 +3,10 @@ Windows Stock Application Removal
 -------------------------------------------------------------------------------
 set-executionpolicy remotesigned
 
+
+----[source, shell]
 Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
+----
 
 $ProvisionedAppPackageNames = @(
 "Microsoft.3DBuilder"
