@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Windows Stock Application Removal
+-------------------------------------------------------------------------------
+set-executionpolicy remotesigned
+
+Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
+
+$ProvisionedAppPackageNames = @(
+"Microsoft.3DBuilder"
+"Microsoft.BingFinance"
+"Microsoft.BingNews"
+"Microsoft.BingSports"
+"Microsoft.BingWeather"
+"Microsoft.ConnectivityStore"
+"Microsoft.Getstarted"
+"Microsoft.Messaging"
+"Microsoft.Microsoft3DViewer"
+"Microsoft.MicrosoftOfficeHub"
+"Microsoft.MicrosoftSolitaireCollection"
+"Microsoft.MicrosoftStickyNotes"
+"Microsoft.MSPaint"
+"Microsoft.Office.OneNote"
+"Microsoft.People"
+"Microsoft.Print3D"
+"Microsoft.SkypeApp"
+"Microsoft.StorePurchaseApp"
+"microsoft.windowscommunicationsapps" # Mail,Calendar
+"Microsoft.WindowsFeedbackHub"
+"Microsoft.WindowsPhone"
+"Microsoft.WindowsStore"
+"Microsoft.Xbox.TCUI"
+"Microsoft.XboxApp"
+"Microsoft.XboxGameOverlay"
+"Microsoft.XboxIdentityProvider"
+"Microsoft.XboxSpeechToTextOverlay"
+"Microsoft.ZuneMusic"
+"Microsoft.ZuneVideo"
+"Microsoft.YourPhone"
+)
+foreach ($ProvisionedAppName in $ProvisionedAppPackageNames) {
+Get-AppxPackage -Name $ProvisionedAppName -AllUsers | Remove-AppxPackage
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -EQ $ProvisionedAppName | Remove-AppxProvisionedPackage -Online
+}
+exit
+
+
+$ProvisionedAppPackageNames = @(
+"Microsoft.Windows.Photos"
+"Microsoft.WindowsAlarms"
+"Microsoft.WindowsCalculator"
+"Microsoft.WindowsCamera"
+"Microsoft.WindowsMaps"
+)
+foreach ($ProvisionedAppName in $ProvisionedAppPackageNames) {
+Get-AppxPackage -Name $ProvisionedAppName -AllUsers | Remove-AppxPackage
+Get-AppXProvisionedPackage -Online | Where-Object DisplayName -EQ $ProvisionedAppName | Remove-AppxProvisionedPackage -Online
+}
+exit
