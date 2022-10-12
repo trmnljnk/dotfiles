@@ -114,7 +114,41 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 
 
 
+-------------------------------------------------------------------------------
+https://github.com/fireeye/flare-vm
+-------------------------------------------------------------------------------
 
+Installations Steps
+Download and copy 'install.ps1' onto your new VM
+
+Open PowerShell as an Administrator
+Unblock the install file by running:
+
+[source, shell]
+----
+Unblock-File .\install.ps1
+----
+
+Enable script execution by running:
+
+[source, shell]
+----
+Set-ExecutionPolicy Unrestricted
+----
+
+Finally, execute the installer script as follow:
+
+[source, shell]
+----
+.\install.ps1
+----
+
+You can also pass your password as an argument: 
+
+[source, shell]
+----
+.\install.ps1 -password <password>
+----
 
 
 
