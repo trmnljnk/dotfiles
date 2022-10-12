@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
-Windows Stock Application Removal
+### Windows Stock Application Removal
 -------------------------------------------------------------------------------
 set-executionpolicy remotesigned
 
@@ -68,7 +68,7 @@ exit
 
 
 -------------------------------------------------------------------------------
-Windows manage Defender Antivirus with PowerShell on Windows 10
+### Windows manage Defender Antivirus with PowerShell on Windows 10
 -------------------------------------------------------------------------------
 
 Check status of Microsoft Defender
@@ -115,7 +115,7 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 
 
 -------------------------------------------------------------------------------
-https://github.com/fireeye/flare-vm
+### https://github.com/fireeye/flare-vm
 -------------------------------------------------------------------------------
 
 Installations Steps
