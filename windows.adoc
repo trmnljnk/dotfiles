@@ -3,8 +3,8 @@ Windows Stock Application Removal
 -------------------------------------------------------------------------------
 set-executionpolicy remotesigned
 
-
-----[source, shell]
+[source, shell]
+----
 Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 ----
 
