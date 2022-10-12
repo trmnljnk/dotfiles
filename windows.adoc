@@ -49,7 +49,7 @@ Get-AppXProvisionedPackage -Online | Where-Object DisplayName -EQ $ProvisionedAp
 exit
 ----
 
-[sourde, shell]
+[source, shell]
 ----
 $ProvisionedAppPackageNames = @(
 "Microsoft.Windows.Photos"
@@ -73,29 +73,41 @@ Windows manage Defender Antivirus with PowerShell on Windows 10
 
 Check status of Microsoft Defender
 
-[sourde, shell]
+[source, shell]
 ----
 Get-MpComputerStatus
 ----
 
 Ceck for updates on Microsoft Defender
 
+[source, shell]
+----
 Update-MpSignature
+----
 
 Perform quick virus scan with Microsoft Defender
 
+[source, shell]
+----
 Start-MpScan -ScanType QuickScan
+----
 
 Perform full virus scan with Microsoft Defender
 
+[source, shell]
+----
 Start-MpScan -ScanType FullScan
+----
 
 Perform custom virus scan with Microsoft Defender
 
+[source, shell]
+----
 Start-MpScan -ScanType CustomScan -ScanPath "C:\Users\user\Downloads"
+----
 
 Disable antivirus
-[sourde, shell]
+[source, shell]
 ----
 Set-MpPreference -DisableRealtimeMonitoring $true
 ----
