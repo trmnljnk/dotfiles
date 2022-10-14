@@ -1,0 +1,29 @@
+
+[source, shell]
+----
+choco outdated
+----
+
+
+[source, shell]
+----
+choco upgrade -y all
+----
+
+[source, shell]
+----
+choco list --local-only --all-versions --include-programs | Tee-Object -FilePath "C:\Users\tj\Desktop\list.txt"
+----
+
+
+
+choco upgrade -y pwsh
+choco install -y notepadplusplus
+choco install -y totalcommander
+choco install -y wget
+choco install -y curl
+choco install -y winscp
+choco install -y ghidra
+choco install -y croc
+choco install -y ida-free
+choco install -y 7zip
