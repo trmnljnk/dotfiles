@@ -16,7 +16,8 @@ choco list --local-only --all-versions --include-programs | Tee-Object -FilePath
 ----
 
 
-
+[source, shell]
+----
 choco upgrade -y pwsh
 choco install -y notepadplusplus
 choco install -y totalcommander
@@ -27,3 +28,4 @@ choco install -y ghidra
 choco install -y croc
 choco install -y ida-free
 choco install -y 7zip
+----
