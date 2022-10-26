@@ -150,6 +150,44 @@ You can also pass your password as an argument:
 .\install.ps1 -password <password>
 ----
 
+[source, shell]
+----
+ipconfig /all | findstr DNS
+----
+
+[source, shell]
+----
+ipconfig /release 
+----
+
+[source, shell]
+----
+ipconfig /renew
+----
+
+[source, shell]
+----
+ipconfig /displaydns | clip
+----
+
+[source, shell]
+----
+nslookup coolelectric.nl
+----
 
 
+[source, shell]
+----
+nslookup coolelectric.nl 8.8.8.8
+----
+
+[source, shell]
+----
+ipconfig /flushdns
+----
+
+[source, shell]
+----
+
+----
 
