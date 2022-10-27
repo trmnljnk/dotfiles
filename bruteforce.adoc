@@ -1,5 +1,6 @@
 https://github.com/navin-maverick/BruteBot
 
+https://github.com/PacktPublishing/Learning-Python-Web-Penetration-Testing.git
 
 [source, python]
 ----
