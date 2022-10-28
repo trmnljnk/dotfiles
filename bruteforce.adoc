@@ -2,6 +2,8 @@ https://github.com/navin-maverick/BruteBot
 
 https://github.com/PacktPublishing/Learning-Python-Web-Penetration-Testing.git
 
+https://github.com/rpigu-i/python-webapp-username-bruteforcer
+
 [source, python]
 ----
 #! /usr/bin/python
