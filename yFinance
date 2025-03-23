@@ -8,6 +8,7 @@ pip install -q yFinance
 
 pip install jupyter
 
+jupyter notebook
 
 
 import yfinance as yf
