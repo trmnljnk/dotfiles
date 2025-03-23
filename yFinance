@@ -22,5 +22,12 @@ print(data.tail())
 # Save the data to a CSV file
 data.to_csv(f'{ticker}_historical_data.csv')
 
+import yfinance as yf
 
+msft = yf.Ticker("MSFT")
 
+msft.info
+
+data = msft.history(period="max")
+
+data.to_csv(f'{ticker}_historical_data.csv')
