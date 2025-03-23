@@ -1,1 +1,25 @@
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install --upgrade pip
+
+pip install -q yFinance
+
+pip install jupyter
+
+
+
+import yfinance as yf
+
+# Fetch data for a specific stock
+ticker = 'BRK-B'
+data = yf.download(ticker, start="2020-01-01", end="2025-03-22")
+print(data.head())
+print(data.tail())
+
+# Save the data to a CSV file
+data.to_csv(f'{ticker}_historical_data.csv')
+
+
 
