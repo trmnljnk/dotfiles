@@ -4,12 +4,9 @@ source .venv/bin/activate
 
 pip install --upgrade pip
 
-pip install -q yFinance
-
-pip install jupyter
+pip install -q yFinance jupyter
 
 jupyter notebook
-
 
 import yfinance as yf
 
